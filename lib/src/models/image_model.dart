@@ -2,12 +2,13 @@ class ImageModel {
   late int id;
   late String body;
   late String title;
+  late String url;
 
-  ImageModel(this.id, this.body, this.title);
+  ImageModel(this.id, this.title, this.url);
 
   ImageModel.fromJson(Map<String, dynamic> parsedJson) {
     id = parsedJson['id'];
-    body = parsedJson['body'];
     title = parsedJson['title'];
+    url = parsedJson['url'];
   }
 }
